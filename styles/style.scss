@@ -1,0 +1,46 @@
+$blancCasse : #F1F1F1;
+$blancGris  : #F5F5F5;
+$sombre     : #333;
+
+@mixin flexCentreX {
+  display         : flex;
+  justify-content : center;
+}
+
+*, ::before, ::after {
+  box-sizing : border-box;
+}
+
+body {
+  font-family : "Poppins", sans-serif;
+  height      : 100vh;
+  margin      : 0;
+  padding     : 0;
+}
+
+.navbar {
+  position         : fixed;
+  z-index          : 100;
+  width            : 100%;
+  @include flexCentreX;
+  height           : 60px;
+  border-bottom    : 1px solid #999;
+  background-color : $blancGris;
+}
+
+.contItems {
+  font-size   : 1.375rem;
+  display     : flex;
+  align-items : center;
+  height      : 100%;
+
+  .items {
+	margin-right    : 30px;
+	text-decoration : none;
+	color           : #111;
+
+	&:hover {
+	  color : #5F5F5F;
+	}
+  }
+}

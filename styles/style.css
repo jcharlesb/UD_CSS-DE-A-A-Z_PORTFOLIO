@@ -1,3 +1,38 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  border-bottom: 1px solid #999;
+  background-color: #F5F5F5;
+}
+
+.contItems {
+  font-size: 1.375rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.contItems .items {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #111;
+}
+.contItems .items:hover {
+  color: #5F5F5F;
+}
 
 /*# sourceMappingURL=style.css.map */
