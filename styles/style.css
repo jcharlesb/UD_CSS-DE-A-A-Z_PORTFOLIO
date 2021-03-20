@@ -35,4 +35,82 @@ body {
   color: #5F5F5F;
 }
 
+.accueil::before {
+  position: absolute;
+  z-index: 0;
+  width: inherit;
+  height: inherit;
+  content: "";
+  background: url("../ressources/home.jpg");
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(30%) brightness(0.8);
+}
+
+.accueil {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+}
+.accueil h1 {
+  font-family: "Abril Fatface", sans-serif;
+  font-size: 4.25rem;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  padding-top: 150px;
+  letter-spacing: 0.325rem;
+  color: #F1F1F1;
+}
+.accueil .sousTitreP {
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.0625rem;
+  z-index: 10;
+  color: #F1F1F1;
+}
+
+@media screen and (max-width: 1200px) {
+  .accueil h1 {
+    font-size: 3.775rem;
+    letter-spacing: 0.3125rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .accueil {
+    height: 600px;
+  }
+  .accueil h1 {
+    font-size: 3.25rem;
+    letter-spacing: 0.2625rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .accueil {
+    height: 600px;
+  }
+  .accueil h1 {
+    font-size: 2.625rem;
+    letter-spacing: 0.2375rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .accueil {
+    height: 500px;
+    align-items: flex-start;
+  }
+  .accueil h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1875rem;
+    margin: 0 30px;
+  }
+  .accueil .sousTitreP {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
