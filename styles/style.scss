@@ -138,3 +138,88 @@ body {
 	}
   }
 }
+
+// SECTION 1 TEXTE ET IMAGE : À PROPOS
+.titreSection1 {
+  font-size   : 2.5rem;
+  padding-top : 20px;
+  text-align  : center;
+}
+
+.textImg {
+  width         : 100%;
+  padding-top   : 20px;
+  @include flexCentreX;
+  border-bottom : 1px dashed lightskyblue;
+
+  .flexContainerSection1 {
+	@include flexCentreX;
+	width : 1200px;
+
+	.contImgSection1 {
+	  width  : 45%;
+	  margin : 20px;
+
+	  img {
+		width         : 100%;
+		height        : auto;
+		border-radius : 8px;
+	  }
+	}
+
+	.contTextSection1 {
+	  width            : 45%;
+	  margin           : 20px;
+
+	  border-radius    : 8px;
+	  background-color : lightskyblue;
+	  color            : #666;
+	  //border: 1px solid black;
+
+	  h2 {
+		font-size  : 2.25rem;
+		text-align : center;
+	  }
+
+	  .sousTitreSection1 {
+		text-align : center;
+	  }
+
+	  hr {
+		width  : 12%;
+		border : 1px solid #888;
+	  }
+
+	  .textSection1 {
+		font-size : 1.125rem;
+		padding   : 15px 30px;
+
+		&::first-letter {
+		  font-size : 1.875rem;
+		}
+	  }
+	}
+  }
+}
+
+@media screen and (max-width : 1200px) {
+  .textImg .flexContainerSection1 {
+	flex-direction : column;
+	align-items    : center;
+	width          : 400px;
+
+	.contImgSection1 {
+	  width : 100%;
+	}
+
+	.contTextSection1 {
+	  width : 100%;
+	}
+  }
+}
+
+@media screen and (max-width : 576px) {
+  .titreSection1 {
+	font-size : 1.5rem;
+  }
+}
