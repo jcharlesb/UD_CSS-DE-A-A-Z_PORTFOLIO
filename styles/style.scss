@@ -289,7 +289,8 @@ body {
 
 // SECTION FORMULAIRE
 .titreFormulaire {
-  text-align : center;
+  padding-top : 50px;
+  text-align  : center;
 }
 
 .formulaire {
@@ -316,7 +317,7 @@ body {
 	  .submitBtn {
 		display    : block;
 		width      : 30%;
-		margin     : 10px auto 0;
+		margin     : 40px auto 60px;
 		cursor     : pointer;
 		transition : all 0.2s ease;
 
@@ -331,4 +332,12 @@ body {
 	  margin-top : 30px;
 	}
   }
+}
+
+
+// SECTION FOOTER
+footer {
+  @include flexCentreX;
+  color      : #5F5F5F;
+  border-top : 1px dashed lightskyblue;
 }

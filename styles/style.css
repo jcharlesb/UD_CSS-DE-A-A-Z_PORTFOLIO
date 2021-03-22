@@ -244,6 +244,7 @@ body {
 }
 
 .titreFormulaire {
+  padding-top: 50px;
   text-align: center;
 }
 
@@ -270,7 +271,7 @@ body {
 .formulaire form .row .submitBtn {
   display: block;
   width: 30%;
-  margin: 10px auto 0;
+  margin: 40px auto 60px;
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -280,6 +281,13 @@ body {
 }
 .formulaire form .row:nth-child(2), .formulaire form .row:nth-child(3) {
   margin-top: 30px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: #5F5F5F;
+  border-top: 1px dashed lightskyblue;
 }
 
 /*# sourceMappingURL=style.css.map */
