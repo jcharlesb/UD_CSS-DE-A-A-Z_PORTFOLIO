@@ -243,4 +243,43 @@ body {
   color: #F1F1F1;
 }
 
+.titreFormulaire {
+  text-align: center;
+}
+
+.formulaire {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.formulaire form {
+  width: 60%;
+}
+.formulaire form .row {
+  width: 100%;
+}
+.formulaire form .row input, .formulaire form .row textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #CCC;
+  border-radius: 6px;
+}
+.formulaire form .row textarea {
+  height: 150px;
+}
+.formulaire form .row .submitBtn {
+  display: block;
+  width: 30%;
+  margin: 10px auto 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.formulaire form .row .submitBtn:hover {
+  color: #F1F1F1;
+  background: lightskyblue;
+}
+.formulaire form .row:nth-child(2), .formulaire form .row:nth-child(3) {
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=style.css.map */

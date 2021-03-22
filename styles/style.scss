@@ -286,3 +286,49 @@ body {
 	color          : $blancCasse;
   }
 }
+
+// SECTION FORMULAIRE
+.titreFormulaire {
+  text-align : center;
+}
+
+.formulaire {
+  width : 100%;
+  @include flexCentreX;
+
+  form {
+	width : 60%;
+
+	.row {
+	  width : 100%;
+
+	  input, textarea {
+		width         : 100%;
+		padding       : 12px;
+		border        : 1px solid #CCC;
+		border-radius : 6px;
+	  }
+
+	  textarea {
+		height : 150px;
+	  }
+
+	  .submitBtn {
+		display    : block;
+		width      : 30%;
+		margin     : 10px auto 0;
+		cursor     : pointer;
+		transition : all 0.2s ease;
+
+		&:hover {
+		  color      : $blancCasse;
+		  background : lightskyblue;
+		}
+	  }
+	}
+
+	.row:nth-child(2), .row:nth-child(3) {
+	  margin-top : 30px;
+	}
+  }
+}
