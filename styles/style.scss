@@ -79,15 +79,14 @@ body {
 	&::first-letter {
 	  //font-size : 6.25rem;
 	}
-
   }
 
   .sousTitreP {
-	font-family : Poppins, sans-serif;
-	font-size   : 1rem;
-	letter-spacing: 0.0625rem;
-	z-index     : 10;
-	color       : $blancCasse;
+	font-family    : Poppins, sans-serif;
+	font-size      : 1rem;
+	z-index        : 10;
+	letter-spacing : 0.0625rem;
+	color          : $blancCasse;
   }
 }
 
@@ -124,18 +123,18 @@ body {
 
 @media screen and (max-width : 576px) {
   .accueil {
-	height : 500px;
-	align-items: flex-start;
+	align-items : flex-start;
+	height      : 500px;
 
 	h1 {
 	  font-size      : 2rem;
+	  margin         : 0 30px;
 	  letter-spacing : 0.1875rem;
-	  margin: 0 30px;
 	}
 
 	.sousTitreP {
-	  margin-left: 30px;
-	  margin-right: 30px;
+	  margin-right : 30px;
+	  margin-left  : 30px;
 	}
   }
 }
