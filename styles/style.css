@@ -48,7 +48,7 @@ body {
   }
   .navbar .contItems {
     display: none;
-    border-top: 1px solid #CCC;
+    border-top: 1px dashed #CCC;
   }
   .navbar .contItems .items {
     display: block;
