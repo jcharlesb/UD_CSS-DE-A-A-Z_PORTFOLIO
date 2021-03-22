@@ -249,10 +249,11 @@ body {
   width     : 1200px;
 
   .imgPortfolio {
-	overflow : hidden;
-	width    : 300px;
-	height   : 370px;
-	margin   : 20px;
+	overflow      : hidden;
+	width         : 300px;
+	height        : 370px;
+	margin        : 20px;
+	border-radius : 8px;
 
 	img {
 	  width  : 100%;

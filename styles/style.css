@@ -213,6 +213,7 @@ body {
   width: 300px;
   height: 370px;
   margin: 20px;
+  border-radius: 8px;
 }
 .flexImgPortfolio .imgPortfolio img {
   width: 100%;
